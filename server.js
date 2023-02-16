@@ -88,7 +88,7 @@ app.delete('/products/:id', async(req,res)=>{
 
 mongoose.set("strictQuery",false)
 mongoose.
-connect('mongodb+srv://admin:123456asd@crud.qvqs0f5.mongodb.net/Node-API?retryWrites=true&w=majority')
+connect('mongodb+srv://admin:<password>@crud.qvqs0f5.mongodb.net/Node-API?retryWrites=true&w=majority')
 .then(()=>{
     app.listen(3000,()=>{
         console.log(`NODE API app is running on port 3000`)
